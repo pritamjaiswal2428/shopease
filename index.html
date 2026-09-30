@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ShopEase - Modern online shopping website">
+    <title>ShopEase | Online Store</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        🚚 Free shipping on orders over $50
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="#home" class="logo">
+                Shop<span>Ease</span>
+            </a>
+
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#products">Shop</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="icon-btn" id="searchBtn">⌕</button>
+
+                <button class="icon-btn cart-button" id="cartBtn">
+                    🛒
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+
+                <button class="menu-btn" id="menuBtn">☰</button>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+
+        <div class="container hero-content">
+
+            <div class="hero-text">
+                <p class="eyebrow">NEW SEASON</p>
+
+                <h1>
+                    Everything you love,
+                    <span>in one place.</span>
+                </h1>
+
+                <p>
+                    Discover stylish clothes, everyday shoes,
+                    smart electronics and accessories for modern life.
+                </p>
+
+                <a href="#products" class="btn primary-btn">
+                    Shop Collection →
+                </a>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1000&q=80"
+                    alt="Shopping store"
+                >
+
+                <div class="sale-card">
+                    <strong>Up to 40% OFF</strong>
+                    <small>Selected products</small>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Categories -->
+    <section class="section" id="categories">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">SHOP BY CATEGORY</p>
+                    <h2>Explore Categories</h2>
+                </div>
+
+                <p>Find products that fit your lifestyle.</p>
+            </div>
+
+            <div class="categories">
+
+                <div class="category-card" data-category="Clothing">
+                    <div class="category-icon">👕</div>
+                    <h3>Clothing</h3>
+                    <p>Trendy everyday styles</p>
+                </div>
+
+                <div class="category-card" data-category="Shoes">
+                    <div class="category-icon">👟</div>
+                    <h3>Shoes</h3>
+                    <p>Comfortable footwear</p>
+                </div>
+
+                <div class="category-card" data-category="Electronics">
+                    <div class="category-icon">🎧</div>
+                    <h3>Electronics</h3>
+                    <p>Technology for everyone</p>
+                </div>
+
+                <div class="category-card" data-category="Accessories">
+                    <div class="category-icon">👜</div>
+                    <h3>Accessories</h3>
+                    <p>Complete your style</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Products -->
+    <section class="section products-section" id="products">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">POPULAR PRODUCTS</p>
+                    <h2>Featured Products</h2>
+                </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="toolbar">
+
+                <div class="filters">
+
+                    <button class="filter-btn active" data-filter="All">
+                        All
+                    </button>
+
+                    <button class="filter-btn" data-filter="Clothing">
+                        Clothing
+                    </button>
+
+                    <button class="filter-btn" data-filter="Shoes">
+                        Shoes
+                    </button>
+
+                    <button class="filter-btn" data-filter="Electronics">
+                        Electronics
+                    </button>
+
+                    <button class="filter-btn" data-filter="Accessories">
+                        Accessories
+                    </button>
+
+                </div>
+
+                <div class="search-box">
+                    🔍
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="Search products..."
+                    >
+                </div>
+
+            </div>
+
+            <!-- Product Grid -->
+            <div class="products-grid" id="productGrid">
+                <!-- Products generated by JavaScript -->
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Promotion -->
+    <section class="promotion">
+
+        <div class="container">
+
+            <div class="promotion-box">
+
+                <div>
+                    <p class="eyebrow">MEMBER PERKS</p>
+
+                    <h2>
+                        Get 10% off your first order.
+                    </h2>
+
+                    <p>
+                        Join our mailing list for special offers
+                        and new product announcements.
+                    </p>
+                </div>
+
+                <a href="#contact" class="btn primary-btn">
+                    Join Now
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+
+        <div class="container contact-grid">
+
+            <div class="contact-info">
+
+                <p class="eyebrow">GET IN TOUCH</p>
+
+                <h2>Contact ShopEase</h2>
+
+                <p>
+                    Have questions about your order, products or returns?
+                    Send us a message.
+                </p>
+
+                <div class="contact-details">
+                    <p>📧 <strong>Email:</strong> hello@shopease.com</p>
+                    <p>📞 <strong>Phone:</strong> +1 800 555 0199</p>
+                    <p>📍 <strong>Address:</strong> New York, USA</p>
+                    <p>🕐 <strong>Hours:</strong> Mon - Fri, 9AM - 6PM</p>
+                </div>
+
+            </div>
+
+            <form class="contact-form" id="contactForm">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="Email Address"
+                    required
+                >
+
+                <input
+                    type="text"
+                    placeholder="Subject"
+                >
+
+                <textarea
+                    placeholder="Your Message"
+                    required
+                ></textarea>
+
+                <button type="submit" class="btn primary-btn">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="container footer-grid">
+
+            <div>
+                <h3 class="footer-logo">
+                    Shop<span>Ease</span>
+                </h3>
+
+                <p>
+                    Simple shopping for the things you use every day.
+                </p>
+            </div>
+
+            <div>
+                <h4>Shop</h4>
+
+                <ul>
+                    <li><a href="#products">All Products</a></li>
+                    <li><a href="#products">Clothing</a></li>
+                    <li><a href="#products">Shoes</a></li>
+                    <li><a href="#products">Electronics</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Help</h4>
+
+                <ul>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Follow Us</h4>
+
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 ShopEase. All rights reserved.
+        </div>
+
+    </footer>
+
+
+    <!-- Shopping Cart -->
+    <div class="cart-overlay" id="cartOverlay">
+
+        <div class="cart">
+
+            <div class="cart-header">
+
+                <h2>Your Cart</h2>
+
+                <button id="closeCart" class="close-btn">
+                    ✕
+                </button>
+
+            </div>
+
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items generated by JavaScript -->
+            </div>
+
+            <div class="cart-footer">
+
+                <div class="cart-total">
+                    <span>Total</span>
+                    <strong id="cartTotal">$0.00</strong>
+                </div>
+
+                <button class="btn primary-btn checkout-btn" id="checkoutBtn">
+                    Checkout
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        Product added to cart!
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
